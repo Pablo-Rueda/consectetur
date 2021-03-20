@@ -1,10 +1,12 @@
 import React from 'react';
 
+import './Style/main.css';
+import {Layout} from "./Components"
 const App = () => {
   return ( 
-    <div>
+    <Layout>
       <h1> App</h1>
-    </div>
+    </Layout>
    );
 }
  

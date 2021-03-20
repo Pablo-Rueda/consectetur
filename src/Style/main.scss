@@ -1,12 +1,39 @@
+//////////////////////////////////////////////////////////////
 // Estructura de archivos SCSS
-
+//
 // # Abstracto
-// ## Mixins: Tamaños base de pantalla
-// ## Variables: variables generales de color y letra 
-
-
+// ### reset: CSS reset para normalizar el diseño
+// ### mixins: Tamaños base de pantalla
+// ### variables: variables generales de color y letra 
+//
+// # Components
+// ### behaviourals: componentes conductuales de la página. Tipica clase para control básico: ".container" / ".content" / ".grid" / ".flex"
+// ### buttons: botones
+// ### card: tarjetas de contenido
+// ### carrousel: carrusel
+// ### layout: cabecera y pie de página
+//
+// # sections
+// ### about: sección principal, las tarjetas
+// ### prdocuts: sección secundaria, el carrusel.
+// ### info: sección última
+//
+//////////////////////////////////////////////////////////////
 
 
 // Abstracto:
-@import './abstracts/mixins';
-@import './abstracts/variables';
+@import './abstract/reset';
+@import './abstract/mixins';
+@import './abstract/variables';
+
+// Componentes:
+@import './components/behaviourals';
+@import './components/button';
+@import './components/card';
+@import './components/carrousel';
+@import './components/layout';
+
+// Sections:
+@import './sections/about';
+@import './sections/info';
+@import './sections/products';
