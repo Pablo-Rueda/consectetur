@@ -1,0 +1,43 @@
+// MEDIA QUERYs
+/*
+
+0 - 600px:          Mobil
+600px - 900px       Tablet
+900px - 1200px      Tablet Grande
+1200px +            PC
+
+*/
+@mixin respond($breakpoint) {
+    // Phone
+    @if $breakpoint == mobil {
+      @media (max-width: 600px) {
+        @content;
+      } //0 - 600px
+    }
+    // Table Portrait
+    @if $breakpoint == tab {
+      @media (max-width: 900px) {
+        @content;
+      } //900px
+    }
+    // Table Landscape
+    @if $breakpoint == tabGrande {
+      @media (max-width: 1200px) {
+        @content;
+      } //1200px
+    }
+    // Big Desktop
+    @if $breakpoint == pc {
+      @media (min-width: 1201px) {
+        @content;
+      } //1800px +
+    }
+  }
+  
+  // Border White Mixin
+  @mixin section-borders {
+    border: 1.5rem solid #fff;
+    border-top: 0;
+    border-bottom: 0;
+  }
+  
