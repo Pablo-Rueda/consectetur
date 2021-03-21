@@ -735,7 +735,7 @@ pre tt:after {
 }
 
 .topSpace {
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 .alignCenter {
@@ -788,6 +788,13 @@ pre tt:after {
   border: 1px solid black;
   -webkit-box-shadow: 0px 1px 5px 1px rgba(122, 122, 122, 0.7);
           box-shadow: 0px 1px 5px 1px rgba(122, 122, 122, 0.7);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.cardContainer:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @media (max-width: 900px) {
@@ -844,6 +851,114 @@ pre tt:after {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.carrouselBackground {
+  margin-top: 50px;
+  height: 350px;
+  background-color: rgba(192, 241, 223, 0.25);
+}
+
+.carrouselContainer {
+  width: 100%;
+  height: 150px;
+}
+
+.carrouselContainer .slides {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+}
+
+@media (min-width: 1201px) {
+  .carrouselContainer .slides {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+.carrouselContainer .slides .slideImg {
+  position: relative;
+  z-index: 10;
+  max-height: 100px;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.arrowPrev, .arrowNext {
+  z-index: 900;
+  padding-top: 30px;
+  position: absolute;
+}
+
+.arrowPrev:hover, .arrowNext:hover {
+  cursor: pointer;
+}
+
+.arrowPrev {
+  left: 10%;
+}
+
+.arrowNext {
+  right: 10%;
+}
+
+.nextSlide {
+  -webkit-animation: next 0.5s;
+          animation: next 0.5s;
+}
+
+@-webkit-keyframes next {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes next {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+.prevSlide {
+  -webkit-animation: prev 0.5s;
+          animation: prev 0.5s;
+}
+
+@-webkit-keyframes prev {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes prev {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
 }
 
 .layoutContainer {
@@ -954,6 +1069,7 @@ pre tt:after {
 
 .headerOpen .menu a:hover {
   color: #00cdac;
+  scroll-behavior: smooth;
 }
 
 .line {

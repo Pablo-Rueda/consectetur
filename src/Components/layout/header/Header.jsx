@@ -29,9 +29,9 @@ const Header = () => {
             </div>
             <div className="headerOpen" style={navContent.style}>
                 <div className="flexCol menu">
-                    <a href="/"><h1> Cards</h1></a>
-                    <a href="/carrousel"><h1> Carrousel</h1></a>
-                    <a href="/information"><h1> Information</h1></a>
+                    <a href="./"><h1> Cards</h1></a>
+                    <a href="carrousel"><h1> Carrousel</h1></a>
+                    <a href="./information"><h1> Information</h1></a>
                 </div>
             </div>
          </div>

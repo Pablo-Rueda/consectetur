@@ -81,6 +81,8 @@
         }
         a:hover{
             color:$secondaryColor;
+            scroll-behavior: smooth;
+
         }
     } // # fin contenido menu:
 }  // fin Control del menu:
