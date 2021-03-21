@@ -1,0 +1,48 @@
+.cardContainer{// tarjeta
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    max-width: 500px;
+    min-height: 400px;
+    border:1px solid black;
+    box-shadow: 0px 1px 5px 1px rgba(122, 122, 122, 0.7);
+    @include respond(tab) {
+        max-width: 100%;
+    }
+    .cardContent{ // # tarjeta contenido
+        flex-grow: 1;
+        margin: 20px;
+        .cardImg{ // ### imagen
+            img{      
+                padding: 0;      
+                border: 3px solid $secondaryColor;
+            }
+            margin: 0px;
+        }// ### fin imagen
+        .tag{// ### tag
+            margin: 10px 0px 0px;
+            max-width: 125px;
+            background-color: $primaryColor;
+            p{
+                font-size: 14px;
+                text-align: center;
+                padding: 3px;
+            }
+        }// ### fin tag
+        .cardText{
+            margin: 0;
+            h4{
+                margin-bottom: 5px;
+            }
+            p{
+                line-height: 20px;
+                font-size: 14px;
+            }
+        }
+    } // # fin tarjeta contenido
+    .cardButtonContainer{
+        display: flex;
+        justify-content: flex-end;
+    }
+} // fin tarjeta 
+

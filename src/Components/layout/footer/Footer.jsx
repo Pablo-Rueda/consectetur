@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return ( 
         <div className="footerBar">
-            <div className="generalContainer footerFlex barContent">
+            <div className="generalContainer rowToCol footerFlex barContent">
                 <div className="text"><p>© Netberry Solutions</p></div>
                 <div className="footerLinks flexRow">
                     <a href="/">Fringilia</a>

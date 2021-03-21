@@ -12,6 +12,7 @@
 // ### card: tarjetas de contenido
 // ### carrousel: carrusel
 // ### layout: cabecera y pie de página
+// ### line: linea, componente menor para texto
 //
 // # sections
 // ### about: sección principal, las tarjetas
@@ -32,8 +33,9 @@
 @import './components/card';
 @import './components/carrousel';
 @import './components/layout';
+@import './components/line';
 
-// Sections:
-@import './sections/about';
+// Secciones:
+@import './sections/cardsSection';
 @import './sections/info';
 @import './sections/products';

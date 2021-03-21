@@ -77,7 +77,6 @@ dfn {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
 }
 
 mark {
@@ -276,14 +275,8 @@ img {
 }
 
 h1 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin: 0;
+  padding: 0;
   color: inherit;
   font-family: 'Ubuntu', sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
@@ -293,14 +286,8 @@ h1 {
 }
 
 h2 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin: 0 0 0.75rem;
+  padding: 0;
   color: inherit;
   font-family: 'Ubuntu', sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
   font-weight: bold;
@@ -310,14 +297,8 @@ h2 {
 }
 
 h3 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin: 0 0 0.75rem;
+  padding: 0;
   color: inherit;
   font-family: 'Ubuntu', sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
   font-weight: bold;
@@ -327,14 +308,8 @@ h3 {
 }
 
 h4 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin: 0;
+  padding: 0;
   color: inherit;
   font-family: 'Ubuntu', sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
   font-weight: bold;
@@ -344,14 +319,8 @@ h4 {
 }
 
 h5 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin: 0;
+  padding: 0;
   color: inherit;
   font-family: 'Ubuntu', sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
   font-weight: bold;
@@ -361,14 +330,8 @@ h5 {
 }
 
 h6 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin: 0;
+  padding: 0;
   color: inherit;
   font-family: 'Ubuntu', sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
   font-weight: bold;
@@ -429,22 +392,13 @@ dd {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
+  padding: 0;
   margin-bottom: 1.45rem;
 }
 
 p {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin: 0 0 0.75rem;
+  padding: 0;
 }
 
 figure {
@@ -752,6 +706,146 @@ pre tt:after {
           flex-direction: column;
 }
 
+.rowToCol, .rowToCol--tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  .rowToCol, .rowToCol--tab {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .rowToCol--tab {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.topSpace {
+  margin-top: 2rem;
+}
+
+.alignCenter {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.spaceBetween {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.spaceBetween div {
+  margin: 10px;
+}
+
+.button, .cardButton {
+  padding: 5px 30px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.cardButton {
+  background: #00cdac;
+  color: white;
+}
+
+.cardButton:hover {
+  background: rgba(0, 205, 172, 0.6);
+}
+
+.cardContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  min-height: 400px;
+  border: 1px solid black;
+  -webkit-box-shadow: 0px 1px 5px 1px rgba(122, 122, 122, 0.7);
+          box-shadow: 0px 1px 5px 1px rgba(122, 122, 122, 0.7);
+}
+
+@media (max-width: 900px) {
+  .cardContainer {
+    max-width: 100%;
+  }
+}
+
+.cardContainer .cardContent {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 20px;
+}
+
+.cardContainer .cardContent .cardImg {
+  margin: 0px;
+}
+
+.cardContainer .cardContent .cardImg img {
+  padding: 0;
+  border: 3px solid #00cdac;
+}
+
+.cardContainer .cardContent .tag {
+  margin: 10px 0px 0px;
+  max-width: 125px;
+  background-color: #c0f1df;
+}
+
+.cardContainer .cardContent .tag p {
+  font-size: 14px;
+  text-align: center;
+  padding: 3px;
+}
+
+.cardContainer .cardContent .cardText {
+  margin: 0;
+}
+
+.cardContainer .cardContent .cardText h4 {
+  margin-bottom: 5px;
+}
+
+.cardContainer .cardContent .cardText p {
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.cardContainer .cardButtonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .layoutContainer {
   margin: 0 auto;
   width: 100%;
@@ -787,14 +881,10 @@ pre tt:after {
   font-size: 14px;
 }
 
-.footerBar .footerFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+@media (max-width: 600px) {
+  .footerBar .footerFlex {
+    text-align: center;
+  }
 }
 
 .footerBar .footerFlex .footerLinks {
@@ -810,16 +900,6 @@ pre tt:after {
 
 .footerBar .footerFlex .footerLinks a:hover {
   color: #00cdac;
-}
-
-@media (max-width: 600px) {
-  .footerBar .footerFlex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
 }
 
 .barContent {
@@ -866,5 +946,20 @@ pre tt:after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.headerOpen .menu h1 {
+  margin-top: 1.25rem;
+}
+
+.headerOpen .menu a:hover {
+  color: #00cdac;
+}
+
+.line {
+  width: 75px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #00cdac;
 }
 /*# sourceMappingURL=main.css.map */

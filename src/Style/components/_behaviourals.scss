@@ -3,8 +3,8 @@
     max-width: 80%;
     margin: 0 auto;
 }
-
 // behaviourals:
+// #flex
 .flex{
     display:flex;
     padding: 0;
@@ -17,4 +17,31 @@
 .flexCol{
     @extend .flex;
     flex-direction: column;
+}
+.rowToCol{
+    display: flex;
+    flex-direction: row;
+    @include respond(mobil) {
+        flex-direction: column;
+    }
+}
+.rowToCol--tab{
+    @extend .rowToCol;
+    @include respond(tab) {
+        flex-direction: column;
+    }
+}
+// #align
+.topSpace{
+    margin-top: 2rem;
+}
+.alignCenter{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.spaceBetween{
+    justify-content: space-between;
+    div{ margin: 10px;} 
 }

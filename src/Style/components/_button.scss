@@ -1,0 +1,15 @@
+.button{
+    padding: 5px 30px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.cardButton{
+    @extend .button;
+    background: $secondaryColor;
+    color: white;
+}
+.cardButton:hover{
+    background: rgba($secondaryColor,0.6);
+}

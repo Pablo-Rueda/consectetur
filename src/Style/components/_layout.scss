@@ -11,8 +11,8 @@
     flex-grow: 1;
 }
 
-// barras de navegación:
-
+// Barras de navegación:
+// ####################
 .headerBar{ //cabecera
     z-index: 1000;
     width: 100%;
@@ -25,10 +25,11 @@
     height: 50px;
     background-color: $primaryColor;
     font-size: 14px;
-    .footerFlex{
-        display: flex;
-        flex-direction: row;
-        .footerLinks{
+    .footerFlex{ // # flex footer
+        @include respond(mobil) {
+            text-align: center;
+        }
+        .footerLinks{  // ### enlaces
             align-self: center;
             p, h1,h2,h3,h4,h5,h6{
                 padding:0 10px;
@@ -37,49 +38,50 @@
             a:hover{
                 color:$secondaryColor;
             }
-        }
-        @include respond(mobil) {
-            flex-direction: column;
-            text-align: center;
-        }
-    }
+        }   // ### fin enlaces
+    }// # fin flex footer
 }
 
 
-
-
-.barContent{    //barras
+.barContent{  // barra contenido general
     align-items: center;
     height: 100%;
-    .text{
+    .text{ // # texto
         width: 100%; 
         padding-left: 1rem;
         p, h1,h2,h3,h4,h5,h6{
             padding:0;
             margin: 0;
         }
-    }
-
-    .hmgButton{
+    } // # fin texto
+    .hmgButton{ // # boton hmg
         background-color: transparent;
         border: none;
         outline:none;
         &:hover{
             cursor: pointer;
         }
-    }
-}
+    } // # fin boton hmg
+} // fin barra contenido general
 
-.headerOpen{
+
+// Menu en apertura:
+.headerOpen{  // Control del menu:
     position: fixed;
     transition: 1s;
     z-index: 999;
     width: 100vw;
     height: 100vh;
     background-color: $primaryColor;
-    .menu{
+    .menu{   // # contenido menu:
         align-items: center;
         justify-content: center;
-    }
-}
+        h1{
+            margin-top:1.25rem;
+        }
+        a:hover{
+            color:$secondaryColor;
+        }
+    } // # fin contenido menu:
+}  // fin Control del menu:
 
