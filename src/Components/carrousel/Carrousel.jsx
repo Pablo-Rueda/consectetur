@@ -52,7 +52,7 @@ const Carrousel = () => {
             
             <div className="flexRow spaceBetween slides">
                     <a href="/" 
-                        className={(!animation)?("slideImg"):((prevAni)?("slideImg prevSlide"):("slideImg nextSlide"))}
+                        className={(!animation)?("slideImgSides"):((prevAni)?("slideImgSides prevSlide"):("slideImgSides nextSlide"))}
                         onAnimationEnd={()=>{setAnimation(false)}}
                         >
                         <ExportImages 
@@ -63,7 +63,7 @@ const Carrousel = () => {
                             />
                     </a>
                     <a href="/" 
-                        className={(!animation)?("slideImg"):((prevAni)?("slideImg prevSlide"):("slideImg nextSlide"))}
+                        className={(!animation)?("slideImgCentral"):((prevAni)?("slideImgCentral prevSlide"):("slideImgCentral nextSlide"))}
                         onAnimationEnd={()=>{setAnimation(false)}}
                         >
                         <ExportImages 
@@ -74,7 +74,7 @@ const Carrousel = () => {
                             />
                     </a>
                     <a href="/" 
-                        className={(!animation)?("slideImg"):((prevAni)?("slideImg prevSlide"):("slideImg nextSlide"))}
+                        className={(!animation)?("slideImgSides"):((prevAni)?("slideImgSides prevSlide"):("slideImgSides nextSlide"))}
                         onAnimationEnd={()=>{setAnimation(false)}}
                         >
                         <ExportImages 
@@ -85,7 +85,6 @@ const Carrousel = () => {
                             />
                     </a>
             </div>
-
         </div>
      );
 }

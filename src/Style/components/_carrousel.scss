@@ -25,6 +25,18 @@
             max-width: 300px;
             margin:10px;
         }
+        .slideImgSides{
+            @extend .slideImg;
+            @include respond(mobil) {
+                display: none;
+            }
+        }
+        .slideImgCentral{
+            @extend .slideImg;
+            @include respond(mobil) {
+                margin: 0 auto;
+            }
+        }
     } // # fin contenido slides
 } // fin carrousel container
 
@@ -32,8 +44,11 @@
     z-index: 900;
     padding-top: 30px;
     position: absolute;
+    transition: 0.5s;
     &:hover{
         cursor: pointer;
+        transform: scale(0.9);
+        
     }
 }
 .arrowPrev{

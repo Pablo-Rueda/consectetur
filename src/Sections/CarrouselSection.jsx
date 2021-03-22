@@ -5,7 +5,7 @@ const CarrouselSection = () => {
         <section id="carrousel" className="carrouselBackground">
             <div className="generalContainer topSpace">
                 <div className="alignCenter flexCol">
-                    <h2>Consectetur</h2>
+                    <h2>Justo vel dapibus</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nostrum optio eligendi neque consequatur!</p>
                     <div className="line" />
                 </div>

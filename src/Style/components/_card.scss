@@ -10,6 +10,7 @@
 
     &:hover{
         transform: scale(1.05);
+        cursor: pointer;
     }
     @include respond(tab) {
         max-width: 100%;
@@ -29,7 +30,7 @@
             max-width: 125px;
             background-color: $primaryColor;
             p{
-                font-size: 14px;
+                font-size: $defaultFontSize;
                 text-align: center;
                 padding: 3px;
             }
@@ -41,7 +42,7 @@
             }
             p{
                 line-height: 20px;
-                font-size: 14px;
+                font-size: $defaultFontSize;
             }
         }
     } // # fin tarjeta contenido

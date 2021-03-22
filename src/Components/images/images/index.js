@@ -13,6 +13,8 @@ import platsBox03 from "./platsBox03.jpg";   // https://www.pexels.com/photo/pot
 import platsBox04 from "./platsBox04.jpg";   // https://www.pexels.com/photo/potted-houseplants-on-shelves-in-light-room-4461006/
 import platsBox05 from "./platsBox05.jpg";   // https://www.pexels.com/photo/potted-plants-in-clay-pots-on-windowsill-4915534/
 import platsBox06 from "./platsBox06.jpg";   // https://www.pexels.com/photo/photo-of-green-leaf-potted-plants-on-window-and-stand-930004/
+import shop from "./shop.jpg";   // https://www.pexels.com/photo/crop-woman-with-flowers-in-basket-5410082/
+import doc from "./doc.jpg";   // https://fontawesome.com/icons/file-alt?style=regular
 
 
 
@@ -30,6 +32,8 @@ export default {
     platsBox03,
     platsBox04,
     platsBox05,
-    platsBox06
+    platsBox06,
+    shop,
+    doc
 }
 

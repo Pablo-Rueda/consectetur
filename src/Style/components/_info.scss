@@ -1,0 +1,98 @@
+$infoHeight:600px;
+
+
+.infoSec{
+    display: flex;
+    width: 100%;
+    height: 850px;
+    @include respond(mobil) {
+        height: 590px;
+    }
+}
+.infoBackSquare{
+    position: absolute;
+    z-index: 100;
+    right: 10%;
+    max-width: 70%;
+    width: 100%;
+    height: $infoHeight;
+    background-color: $secondaryColor;
+    box-shadow: 0px 1px 3px black;
+    @include respond(mobil) {
+        display: none;
+    }
+}
+.infoContent{ // contenido info 
+    position: absolute;
+    z-index: 110;
+    margin-top:2.5%;
+    right: 12.5%;
+    max-width: 70%;
+    width: 100%;
+    box-shadow: 0px 1px 3px black;
+    height: $infoHeight;
+    background-color: $primaryColor;
+    @include respond(mobil) {
+        max-width: 100%;
+        height: 100%;
+        right: 0%;
+    }
+    .infoText{ // # texto info 
+        margin-top: 3%;
+        padding-left:40%;
+        padding-right: 20px;
+
+        h1{
+            font-size: $bigFontSize;
+        }
+        ul {
+            list-style: '✓';
+            margin: 10px 0;
+          }
+          
+        li{
+            line-height: 18px;
+            font-size: $defaultFontSize;
+            span{
+                position: relative;
+                left: 10px;
+            }
+        }
+
+        @include respond(mobil) {
+            padding-left:20px;
+        }
+    }// # fin texto info 
+
+}// # fin contenido info 
+
+.infoImage{
+    position: absolute;
+    z-index: 120;
+    margin-top:5%;
+    left: 10%;
+    max-width: 32.5%;
+    width: 100%;
+    height: $infoHeight;
+    background-color: grey;
+    @include respond(mobil) {
+        display: none;
+    }
+}        
+
+.tagContainer{
+    margin-top:5%;
+    height: 75px;
+    display:flex;
+    align-items: center;
+    img{
+        z-index: 120;
+    }
+    .infoTag{
+        padding: 3px 15px 0 50px;
+        min-height: 32px;
+        width: 100%;
+        background-color: $secondaryColor;
+        transform: translateX(-8%);
+    }
+}

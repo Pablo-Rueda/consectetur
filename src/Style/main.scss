@@ -11,13 +11,9 @@
 // ### buttons: botones
 // ### card: tarjetas de contenido
 // ### carrousel: carrusel
+// ### info: elemento informativo de la última sección
 // ### layout: cabecera y pie de página
 // ### line: linea, componente menor para texto
-//
-// # sections
-// ### about: sección principal, las tarjetas
-// ### prdocuts: sección secundaria, el carrusel.
-// ### info: sección última
 //
 //////////////////////////////////////////////////////////////
 
@@ -34,8 +30,4 @@
 @import './components/carrousel';
 @import './components/layout';
 @import './components/line';
-
-// Secciones:
-@import './sections/cardsSection';
-@import './sections/info';
-@import './sections/products';
+@import './components/info';
