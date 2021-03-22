@@ -21,7 +21,7 @@ La página recibe los compoenentes con la siguiente estructura:
 -------         Carrousel: Carrusel  
 -------         Images: Control de imagenes  
 -------         Layout: encabezado y pie de pagina  
-----        Secciones: 
+----        Secciones:  
 -------         CardsSection: seccion inicial de tarjetas  
 -------         CarrouselSection: Seccion de carrusel  
 -------         InfoSection: seccion de información 
