@@ -1,9 +1,3 @@
----
-title: "Pablo Rueda Test"
-author: "Pablo Rueda"
-date: "21/03/2021"
----
-
 # Pablo Rueda Test
 
 ## Introduccion
