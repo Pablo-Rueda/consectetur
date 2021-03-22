@@ -8,8 +8,7 @@
 # testing
 /coverage
 
-# production
-/build
+# production /build - no ignorado para este proyecto
 
 # misc
 .DS_Store
