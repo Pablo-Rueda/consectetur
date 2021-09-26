@@ -1,7 +1,7 @@
 # Pablo Rueda Test
 
 ## Introduccion
-Test de Pablo Rueda para la prueba de Netberry Solutions. Para probar la solución en vivo, ver carpeta **Build**.
+Prueba de trabajo práctica para aplicación laboral. Para probar la solución en vivo, ver carpeta **Build**.
 
 Utilizo React para la replica debido a mi experiencia con el framework. Me permite mantener los componetes separados en subsecciones para mantener el código más limpio. 
 
